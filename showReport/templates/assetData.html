@@ -89,6 +89,7 @@
                                 <form action="{% url 'getAssets' %}" method="post" enctype="multipart/form-data">
                                     {% csrf_token %}
                                     <p>{{ form.csvFile }} </p>
+                                    <p>{{ validationMessage|linebreaksbr }} </p>
                                     <input type="submit" value="Upload" />
                                 </form>
                             </div>
